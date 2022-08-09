@@ -4,6 +4,8 @@ import { addTodoRoutes } from './app/todos';
 const app = express();
 
 app.get('/api', (req, res) => {
+  console.log('/api');
+  console.log('/api');
   res.send({ message: 'Welcome to api!' });
 });
 addTodoRoutes(app);
